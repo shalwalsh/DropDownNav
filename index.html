@@ -16,14 +16,48 @@
   <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!-- Top navigation -->
   <div class="topnav" id="myTopnav">
+
   <a class="active" href="#home">Home</a>
-  <a href="blog.html">Blog</a>
+
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='blog.html'">Blog
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Entrevues</a>
+      <a href="#">Rédactions</a>
+    </div>
+  </div>
+
   <a href="merch.html">Merch</a>
-  <a href="about.html">À propos</a>
-  <a href="medias.html">Médias</a>
-  <a href="events.html">Événements</a>
+
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='about.html'">À propos</button>
+    <div class="dropdown-content">
+      <a href="#">Nos Services</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+  
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='media.html'">Médias</button>
+    <div class="dropdown-content">
+      <a href="#">Photos</a>
+      <a href="#">Vidéos et rediffusion</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn" onclick="window.location.href='events.html'">Événements</button>
+    <div class="dropdown-content">
+      <a href="#">Lancements et shows</a>
+      <a href="#">Autres</a>
+    </div>
+  </div>
+  
   <a href="faq.html">FAQ</a>
+  
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
